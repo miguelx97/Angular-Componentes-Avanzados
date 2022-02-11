@@ -1,0 +1,9 @@
+<div class="columns is-multiline container m-auto">
+    <div class="column is-one-third" *ngFor="let product of lProducts">
+        <app-product [product]="product" (buyProduct)="buySelectedProduct($event)"></app-product>
+    </div>
+</div>
+<app-searcher [products]="selectedProducts"></app-searcher>
+<app-cart [products]="selectedProducts" [price]="totalPrice" (deleteProd)="deleteProduct($event)" (toPay)="payAlert($event)"></app-cart>
+
+<app-alert></app-alert>

@@ -1,0 +1,9 @@
+.desc{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+img{
+    height: 150px;
+    width: 150px;
+}
